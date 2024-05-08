@@ -70,17 +70,26 @@ Due to the varying level of effort, it’s important to consider which AWS servi
 # Use IAM user instead of root user
 Certainly! Fine-grained permissions refer to the ability to define and assign specific access levels and privileges to users or groups within an AWS account. In the context of IAM (Identity and Access Management) users, fine-grained permissions allow you to control precisely what actions a user can perform and what resources they can access within AWS.
 
-Here's how fine-grained permissions work with IAM users in AWS:
+# Here's how fine-grained permissions work with IAM users in AWS:
 
-Policy-based Access Control: IAM uses policies to define permissions. A policy is a JSON document that specifies the actions allowed or denied on specific AWS resources. You can attach policies to IAM users, groups, or roles to grant or restrict access to various services and resources.
+# Policy-based Access Control: IAM uses policies to define permissions. A policy is a JSON document that specifies the actions allowed or denied on specific AWS resources. You can attach policies to IAM users, groups, or roles to grant or restrict access to various services and resources.
 
-Actions and Resources: IAM policies allow you to specify the actions that a user can perform, such as creating an EC2 instance or accessing an S3 bucket. You can also define the resources on which these actions can be performed, such as specific EC2 instances or S3 buckets. This level of granularity ensures that users have access only to the resources they need for their tasks.
+# Actions and Resources: IAM policies allow you to specify the actions that a user can perform, such as creating an EC2 instance or accessing an S3 bucket. You can also define the resources on which these actions can be performed, such as specific EC2 instances or S3 buckets. This level of granularity ensures that users have access only to the resources they need for their tasks.
 
-Conditions: IAM policies can include conditions that further refine access control. For example, you can specify that a user can only perform certain actions within a specific time frame or from a particular IP address. Conditions provide additional flexibility in tailoring permissions to meet specific requirements.
+# Conditions: IAM policies can include conditions that further refine access control. For example, you can specify that a user can only perform certain actions within a specific time frame or from a particular IP address. Conditions provide additional flexibility in tailoring permissions to meet specific requirements.
 Choosing a Region for AWS resources in accordance with data sovereignty regulations
 
 Implementing data protection mechanisms, such as encryption and managing backups
 
 Using access control to limit who has access to your data and AWS resources
 
-RESOURCES
+# Understand the AWS Root User Credentials
+The AWS root user has two sets of credentials associated with it. One set of credentials is the email address and password used to create the account. This allows you to access the AWS Management Console. The second set of credentials is called access keys, which allow you to make programmatic requests from the 
+AWS Command Line Interface (AWS CLI) or AWS API
+.  Access keys consist of two parts:
+
+An access key ID, for example, A2lAl5EXAMPLE
+
+A secret access key, for example, wJalrFE/KbEKxE
+
+Similar to a username and password combination, you need both the access key ID and secret access key to authenticate your requests via the AWS CLI or AWS API. Access keys should be managed with the same security as an email address and password.
