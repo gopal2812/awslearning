@@ -67,6 +67,16 @@ You are responsible for managing customer data and protecting it through client-
 
 Due to the varying level of effort, it’s important to consider which AWS service you use and review the level of responsibility required to secure the service. It’s also important to review how the shared security model aligns with the security standards in your IT environment, as well as any applicable laws and regulations.It’s important to note that you maintain complete control of your data and are responsible for managing the security related to your content. Here are some examples of your responsibilities in context.
 
+# Use IAM user instead of root user
+Certainly! Fine-grained permissions refer to the ability to define and assign specific access levels and privileges to users or groups within an AWS account. In the context of IAM (Identity and Access Management) users, fine-grained permissions allow you to control precisely what actions a user can perform and what resources they can access within AWS.
+
+Here's how fine-grained permissions work with IAM users in AWS:
+
+Policy-based Access Control: IAM uses policies to define permissions. A policy is a JSON document that specifies the actions allowed or denied on specific AWS resources. You can attach policies to IAM users, groups, or roles to grant or restrict access to various services and resources.
+
+Actions and Resources: IAM policies allow you to specify the actions that a user can perform, such as creating an EC2 instance or accessing an S3 bucket. You can also define the resources on which these actions can be performed, such as specific EC2 instances or S3 buckets. This level of granularity ensures that users have access only to the resources they need for their tasks.
+
+Conditions: IAM policies can include conditions that further refine access control. For example, you can specify that a user can only perform certain actions within a specific time frame or from a particular IP address. Conditions provide additional flexibility in tailoring permissions to meet specific requirements.
 Choosing a Region for AWS resources in accordance with data sovereignty regulations
 
 Implementing data protection mechanisms, such as encryption and managing backups
