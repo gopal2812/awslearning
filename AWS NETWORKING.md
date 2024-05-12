@@ -502,3 +502,20 @@ You learned in a previous unit that subnets can be used to segregate traffic bet
 ![image](https://github.com/gopal2812/awslearning/assets/39087216/72a6a924-ed88-4243-9f75-461954e98337)
 
 This example allows you to define three tiers and isolate each tier with the security group rules you define. In this case, you only allow internet traffic to the web tier over HTTPS, Web Tier to Application Tier over HTTP, and Application tier to Database tier over MySQL. This is different from traditional on-premises environments, in which you isolate groups of resources via VLAN configuration. In AWS, security groups allow you to achieve the same isolation without tying it to your network. 
+External Site:
+ AWS: Route tables
+
+External Site:
+ AWS: Example routing options
+
+External Site:
+ AWS: Working with routing tables
+
+External Site:
+ AWS: Network ACLs
+
+External Site:
+ AWS: Security groups for your VPC
+
+External Site:
+ AWS: I host a website on an EC2 instance. How do I allow my users to connect on HTTP (80) or HTTPS (443)?
