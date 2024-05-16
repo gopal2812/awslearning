@@ -381,56 +381,45 @@ Amazon S3 is not storage attached to compute.
 Amazon Elastic File System (Amazon EFS) and Amazon FSx
 In this module, you’ve already learned about Amazon S3 and Amazon EBS. You learned that S3 uses a flat namespace and isn’t meant to serve as a standalone file system. You also learned most EBS volumes can only be attached to one EC2 instance at a time. So, if you need file storage on AWS, which service should you use?For file storage that can mount on to multiple EC2 instances, you can use Amazon Elastic File System (Amazon EFS) or Amazon FSx. Use the following table for more information about each of these services. 
 
-Service
+What are the main steps involved in creating an S3 bucket and modifying an EC2 instance to use it?
 
-Characteristic
+Coach
+# The main steps involved in creating an S3 bucket and modifying an EC2 instance to use it are as follows:
 
-More Information
+## Creating an S3 bucket:
 
-Amazon Elastic File System (EFS)
+Log in to the AWS Management Console.
+Search for "S3" and click on the S3 service to access the S3 console.
+Click on "Create Bucket" and provide a unique name for your bucket.
+Choose the region where you want to create the bucket.
+Keep the default settings or customize them as per your requirements.
+Click on "Create Bucket" to create the S3 bucket.
+Test the bucket by uploading a file to ensure it works correctly.
+Modifying the EC2 instance:
 
-Fully managed NFS file system.
-
-EFS FAQs
-
-Amazon FSx for Windows File Server
-
-Fully managed file server built on Windows Server that supports the SMB protocol.
-
-FSx for Windows File Server FAQs
-
-Amazon FSx for Lustre
-
-Fully managed Lustre file system that integrates with S3.
-
-FSx for Lustre FAQs
-
-Here are a few important features of Amazon EFS and FSx to know about when comparing them to other services. 
-
-It is file storage.
-
-You pay for what you use (you don’t have to provision storage in advance).
-
-Amazon EFS and Amazon FSx can be mounted onto multiple EC2 instances.
-
-Resources:
-
-External Site:
- AWS: Storage
-
-External Site:
- AWS: Cloud Storage on AWS
-
-External Site: 
-Amazon EFS How it works
- 
-
-External Site: 
-Amazon FSx for Windows File Server
- 
-
-External Site: 
-Amazon FSx for Lustre
- 
+Go to the EC2 service in the AWS Management Console.
+Click on "Instances" and select the instance you want to modify.
+Go to "Actions" and choose "Image and Templates" and then click on "Launch more like this".
+In the instance launching page, modify the instance name to indicate it is using the S3 bucket.
+Keep the image and instance type the same as the original instance.
+Ensure that the instance has a public IP address by enabling "Auto-assign Public IP".
+Scroll down to the user data section and provide the bucket name so that the application knows which bucket to utilize.
+Launch the modified instance and wait for it to be up and running.
+Access the application using the public IP address of the modified instance.
+Remember to follow the instructions provided in the course material for more detailed guidance.
 
 
+## How can you ensure that the bucket and its objects are only accessible by the application and not publicly accessible?
+To ensure that the S3 bucket and its objects are only accessible by the application and not publicly accessible, you can adjust the permissions and bucket policy for the bucket. Here's how you can do it:
+
+Go to the S3 console in the AWS Management Console.
+Click on the name of the bucket you want to modify.
+Navigate to the "Permissions" tab.
+Scroll down to the "Bucket Policy" section and click on the "Edit" button.
+In the bucket policy editor, paste the bucket policy provided in the exercise instructions or create a new policy that restricts access to the bucket.
+Edit the policy to include your account number and the bucket name in the appropriate places.
+Remove any caret brackets (<>) from the policy.
+Save the changes to create the bucket policy.
+By adjusting the bucket policy, you are specifying the access permissions for the bucket and its objects. This ensures that only the application or specific roles/accounts have access to the bucket, making it secure and not publicly accessible.
+
+Please note that the exact steps may vary slightly depending on the AWS Management Console interface version you are using. Always refer to the course material and AWS documentation for the most accurate and up-to-date instructions.
