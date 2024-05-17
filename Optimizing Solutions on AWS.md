@@ -145,6 +145,9 @@ NLP preserves source IP address. NLB preserves the source IP address of the clie
 SELECT BETWEEN ELB TYPES
 Selecting between the ELB service types is done by determining which feature is required for your application. Below you can find a list of the major features that you learned in this unit and the previous.
 
+![image](https://github.com/gopal2812/awslearning/assets/39087216/9b812be1-e2f0-41f0-821d-2b75e2b142e9)
+
+
 Feature
 
 Application Load Balancer
