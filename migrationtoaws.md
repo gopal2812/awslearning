@@ -76,3 +76,4 @@ Cost Optimization Tools: Leverage AWS cost optimization tools and services, such
 Long-Term Cost Planning: Consider the long-term cost implications of using AWS services. Evaluate factors such as scalability, future growth, and potential cost savings through AWS services like auto-scaling and reserved instances. Plan for long-term cost optimization and ensure that the chosen AWS services align with your future needs.
 
 Remember, the cost implications may vary depending on the specific AWS services and on-premises components you are migrating. It's important to carefully evaluate the cost factors and leverage AWS cost management tools to optimize your costs throughout the migration process and beyond.
+![image](https://github.com/gopal2812/awslearning/assets/39087216/ac345930-ccd9-466e-bfee-2d6ec066f383)
