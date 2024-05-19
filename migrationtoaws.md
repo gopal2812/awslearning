@@ -170,3 +170,58 @@ Migration Hub import leverages the AWS Application Discovery Service to process 
 The AWS Application Discovery Service, in turn, receives data from multiple sources, including the Migration Hub import tool. It collects data from the Migration Hub import tool, as well as other tools like the AWS Agentless Discovery Connector and the AWS Application Discovery Agent.
 
 By using both the Migration Hub import tool and the AWS Application Discovery Service, you can gather comprehensive information about your on-premises environment, plan your migration, and track the progress of your application migrations to the AWS Cloud.
+
+
+# The process of migrating mainframe applications to the cloud involves several steps. Here is a high-level overview of the process:
+
+Assess: This stage involves gaining insight into the existing mainframe application and identifying proposed changes. It helps highlight dependencies and create a plan to update the code to a more modern standard.
+
+Refactor: In this stage, you have two options. The first option is to manually fix the code based on the suggestions provided during the assessment stage. The second option is to use the Mainframe Modernization service, which can automatically transform the code into agile Java services and web frameworks.
+
+Re-platform: If you don't want to transform the application, you have the option to directly port the source code to the cloud without making any changes. This allows you to leverage the benefits of the cloud without modifying the application's code.
+
+It's important to note that the specific steps and tools used in the migration process may vary depending on the organization and the specific requirements of the mainframe application. The AWS Mainframe Modernization service is designed to assist in this process by providing tools and guidance to help migrate mainframe workloads to the AWS Cloud.
+
+# The AWS Mainframe Modernization service is designed to assist in migrating mainframe workloads to the cloud. Here's how it can help:
+
+Assessment: The service provides insights into the proposed changes for your older application. It can identify dependencies and help you create a plan to update your code to a more modern standard.
+
+Refactoring: The service offers suggestions for refactoring the code. You have the option to manually fix the code based on these suggestions or use the service to automatically transform the code into agile Java services and web frameworks.
+
+Re-platforming: If you prefer not to transform the application, the service allows you to directly port the source code to the cloud without making any changes. This enables you to leverage the benefits of the cloud without modifying the application's code.
+
+The AWS Mainframe Modernization service aims to simplify the migration process by providing tools and guidance tailored to mainframe workloads. It helps organizations modernize their applications and take advantage of the scalability, flexibility, and cost-efficiency of the AWS Cloud.
+
+Remember, the specific steps and tools used in the migration process may vary depending on the organization and the specific requirements of the mainframe application. It's always recommended to refer to the official AWS documentation and consult with AWS experts for detailed guidance on using the Mainframe Modernization service.
+
+# Can you explain the differences between manually fixing the code and using the automatic transformation option in the refactoring stage?
+Certainly! In the refactoring stage of migrating mainframe applications to the cloud, you have two options: manually fixing the code or using the automatic transformation option. Here are the differences between the two:
+
+Manual Fixing:
+
+In this approach, you review the suggestions provided by the AWS Mainframe Modernization service and manually make the necessary changes to the code.
+You have full control over the modifications and can tailor them to meet your specific requirements.
+This option allows for more customization and fine-tuning of the code, but it may require more time and effort, especially for complex applications.
+Automatic Transformation:
+
+With the automatic transformation option, the AWS Mainframe Modernization service takes care of transforming the code into agile Java services and web frameworks.
+The service uses automated tools and processes to convert the mainframe code into a more modern and cloud-compatible format.
+This option can save time and effort, especially for large and complex applications, as the transformation is done automatically.
+However, it's important to note that the automatic transformation may not always perfectly match the original code's behavior, and some manual adjustments may still be required.
+The choice between manual fixing and automatic transformation depends on factors such as the complexity of the application, the desired level of customization, and the available resources. It's recommended to carefully evaluate the pros and cons of each approach and choose the one that best suits your specific migration requirements.
+
+# ese services and tools included the 
+Migration Readiness Assessment
+, which includes dozens of questions for your team. These questions can help get everyone to a common place on how to view, plan, and perform your necessary migrations.
+
+You also learned about two primary services during this time. The first service is the
+ AWS Migration Evaluator
+. You can use this service to work directly with the 
+Migration Evaluator team
+ to create a directional business case and provide additional insights for your migrations. The team will capture your objectives, and then use analytics to narrow down to the migration patterns that are best suited to your business needs. Also, keep in mind that you can 
+browse through example data
+ to get a better idea of what the Migration Evaluator can do for your organization.
+
+The other service that you learned about is the 
+AWS Migration Hub
+. Migration Hub is one of the best resources you can have to help accelerate and simplify your migration to AWS. You can use Migration Hub to help make the case for cloud within your organization, create an inventory of assets, track your applications, and more. And though we introduced Migration Hub this week, you will continue to learn about it throughout the remainder of the course.
