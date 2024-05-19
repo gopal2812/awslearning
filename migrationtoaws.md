@@ -263,3 +263,27 @@ Parameter Store: Systems Manager includes a Parameter Store, which is a secure s
 Monitoring and Insights: Systems Manager integrates with other AWS services, such as CloudWatch, to provide monitoring and insights into your instances. You can collect and analyze performance metrics, view logs, and set up alarms to detect and respond to issues proactively.
 
 By using AWS Systems Manager, you can efficiently manage and configure resources across multiple instances. It simplifies tasks such as inventory management, command execution, patch management, automation, and configuration management. This centralized approach helps streamline operations, improve efficiency, and ensure consistency across your instances in the AWS Cloud.
+
+
+As part of your time with the mobilize phase of the migration process this week, you learned about reevaluating of migration plan based on the data that you obtain through the assess phase. You also moved another step closer to finalizing the plans for migrating your applications.
+
+One of the services that we discuss is 
+# AWS Application Discovery Service
+, which can help you plan the migration of your various applications. You can use Application Discovery Service to view server utilization; map resource dependencies; and collect behavior, usage, and configuration data from your servers.
+
+If you would like to view and work with the 
+commands used to install the AWS Application Discovery Service Agent
+ (Discovery Agent) during the demo, learning about the commands could help you better understand the service, how it operates, and how you might be able to use it.
+
+Additionally, as you move closer to starting your actual migrations, you learned about two helpful tools that you can use to prepare your environments within AWS. The first tool is 
+AWS Landing Zone
+, which can help you save time by automating the setup of an environment by creating core accounts and resources. It also provides a baseline environment to help you get started with a multi-account architecture, identity and access management, governance, and more.
+
+# AWS Control Tower
+ is the other tool that you can use for this stage of preparation. AWS Control Tower provides a way to set up and govern secure, multi-account AWS environments, which are called landing zones. By using 
+AWS Organizations
+, AWS Control Tower helps to bring ongoing account management and governance, and also the implementation of best practices based on AWS experience.
+
+Speaking of governance, it’s very important for you to use the available tools to help make your environments secure and compliant as you migrate. 
+AWS Management and Governance
+ offers many tools that can help with management and governance before and during your migration, and also with your ongoing usage and optimizations in AWS.
