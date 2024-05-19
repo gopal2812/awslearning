@@ -225,3 +225,11 @@ browse through example data
 The other service that you learned about is the 
 AWS Migration Hub
 . Migration Hub is one of the best resources you can have to help accelerate and simplify your migration to AWS. You can use Migration Hub to help make the case for cloud within your organization, create an inventory of assets, track your applications, and more. And though we introduced Migration Hub this week, you will continue to learn about it throughout the remainder of the course.
+
+# Enable: These tools are designed to give users an environment in which they can create their architecture inside a standardized sandbox. One example is AWS Control Tower, which helps set up multiple AWS accounts with predefined rules and guidelines. It ensures that users follow best practices and helps prevent issues like turning off important services or deleting logs.
+
+# Provision: These tools assist in provisioning resources and building out your architecture. CloudFormation is a popular tool in this category, allowing you to write infrastructure as code and deploy it. It helps standardize your architecture and enables easy auditing of the code before deployment. Another tool in this category is Service Catalog, which provides a vetted and standardized way for users to select and deploy resources.
+
+# Operate: These tools help automate and control running architecture. AWS Systems Manager is a tool that simplifies the management of resources by providing an easy way to deploy, update, and make changes across multiple instances. CloudWatch is another tool that falls under this category, providing monitoring and logging capabilities to help you track the performance of your applications in the cloud.
+
+These three categories of tools in AWS management and governance services enable users to create, provision, and operate their resources effectively in the AWS Cloud.
