@@ -287,3 +287,6 @@ AWS Organizations
 Speaking of governance, it’s very important for you to use the available tools to help make your environments secure and compliant as you migrate. 
 AWS Management and Governance
  offers many tools that can help with management and governance before and during your migration, and also with your ongoing usage and optimizations in AWS.
+
+ ![image](https://github.com/gopal2812/awslearning/assets/39087216/cef08cd2-415b-4fa6-ac4b-be07193de228)
+
