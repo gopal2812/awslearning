@@ -1,3 +1,19 @@
+During this portion of the course, our goal is to introduce the concept of migration, and also introduce some of the concepts and preliminary resources that you might find helpful as you continue to learn about migrating to AWS.
+
+One of the topics from this week is the 
+# AWS shared responsibility model
+ for security. The shared responsibility model describes a relationship where AWS is responsible for the security of the cloud, and you, as the customer, is responsible for the security in the cloud.
+
+You also learned about a couple of approaches to migration that you can consider. One approach relates to the type of migration that you might be planning. Those types, which are laid out in the 
+# 7 Rs of migration
+, help you keep in mind the style of migration that you might need for your various applications. The second approach is the 
+three-phase migration process
+: assess, mobilize, and migrate and modernize. This three-phase migration process was designed by AWS to help you approach your migration.
+
+Closing this section, you learned about the 
+# AWS Prescriptive Guidance
+ page. On this page, you can find strategies, guides, and patterns to help accelerate your cloud migration. These resources were developed by AWS technology experts and the global community of AWS Partners.
+
 # Migration Map
 Creating a migration map before starting the migration process is crucial for a successful migration to the AWS Cloud. Here are a few reasons why it is important:
 
