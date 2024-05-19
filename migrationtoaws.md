@@ -156,3 +156,17 @@ Application dependencies
 Utilization data (e.g., CPU usage, memory usage)
 Application version
 Including these details in the CSV template will provide Migration Hub with the necessary information to plan and track the migration of your servers and applications to the AWS Cloud.
+
+# The Migration Hub import tool and the AWS Application Discovery Service are two components that work together to facilitate the migration process. Here's how they are related:
+
+Migration Hub import: Migration Hub import is a tool that allows you to import information about your on-premises servers and applications into the AWS Migration Hub. It provides a structured format (CSV template) for organizing and uploading the existing data. This tool helps you gather information and track the status of application migrations.
+
+AWS Application Discovery Service: The AWS Application Discovery Service is a service that helps you plan and execute your migration to the AWS Cloud. It collects data about your on-premises servers, applications, and their dependencies. The AWS Application Discovery Service receives data from various sources, including the Migration Hub import tool.
+
+The relationship between these two components is as follows:
+
+Migration Hub import leverages the AWS Application Discovery Service to process and analyze the imported data. It uses the data gathered by the AWS Application Discovery Service to plan and track the migration of your servers and applications.
+
+The AWS Application Discovery Service, in turn, receives data from multiple sources, including the Migration Hub import tool. It collects data from the Migration Hub import tool, as well as other tools like the AWS Agentless Discovery Connector and the AWS Application Discovery Agent.
+
+By using both the Migration Hub import tool and the AWS Application Discovery Service, you can gather comprehensive information about your on-premises environment, plan your migration, and track the progress of your application migrations to the AWS Cloud.
