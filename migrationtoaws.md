@@ -120,7 +120,11 @@ Migration Patterns: Using their expertise and knowledge of AWS services, the tea
 Business Case: The results of the analysis and the identified migration patterns are captured in a Migration Evaluator business case. This business case helps align business and technology stakeholders by providing a clear understanding of the recommended migration approach and its benefits.
 
 By leveraging AWS Migration Expertise, you can benefit from the knowledge and experience of solutions architects who can guide you in selecting the most appropriate migration patterns for your specific migration objectives. This helps ensure that your migration journey is aligned with your goals and maximizes the benefits of migrating to the AWS Cloud.
+# The AWS Agentless Discovery Connector is a VMware appliance that collects information about VMware virtual machines. It is installed as a virtual machine (VM) in your VMware vCenter server environment using an open virtualization archive file (OVA).
 
+Once installed, the Discovery Connector connects to the vCenter server and collects data about all the virtual machines and hosts managed by that specific vCenter. It securely sends the collected data to the AWS Application Discovery Service. This allows you to gather detailed information about your VMware virtual machines, which can be used for migration planning and tracking purposes.
+
+The AWS Agentless Discovery Connector is specifically designed for VMware environments and helps minimize the time required for the initial infrastructure assessment of your on-premises environment.
 # AWS Migration Hub offers several features that assist in the migration process:
 
 IT Asset Inventory: Migration Hub acts as a single destination for storing IT asset inventory data. It allows you to import information about your on-premises servers and applications, creating a centralized repository of your existing IT assets.
@@ -136,3 +140,19 @@ Orchestration: Migration Hub assists in orchestrating the migration process by p
 Migration Dashboard: Migration Hub provides a migration dashboard that shows the latest status and metrics for your rehost and replatform migrations. This dashboard helps you understand the progress of ongoing migrations and identify and troubleshoot any issues that may arise.
 
 By utilizing these features, AWS Migration Hub simplifies and accelerates the migration process. It helps you create a data-driven inventory of your IT assets, visualize network connections, receive strategy recommendations, orchestrate migrations, and monitor the progress of your migration journey.
+
+# What are some examples of server data that can be included in the CSV template for Migration Hub import?
+
+When populating the CSV template for Migration Hub import, you can include various server data to gather information about your on-premises servers and applications. Some examples of server data that can be included in the CSV template are:
+
+Server name or hostname
+IP address
+Operating system
+CPU specifications (e.g., number of cores, clock speed)
+Memory (RAM) size
+Storage capacity
+Network configuration
+Application dependencies
+Utilization data (e.g., CPU usage, memory usage)
+Application version
+Including these details in the CSV template will provide Migration Hub with the necessary information to plan and track the migration of your servers and applications to the AWS Cloud.
