@@ -290,3 +290,33 @@ AWS Management and Governance
 
  ![image](https://github.com/gopal2812/awslearning/assets/39087216/cef08cd2-415b-4fa6-ac4b-be07193de228)
 
+ # Summary
+
+ During the migrate and modernize section, you mostly learned about tools that can primarily help you with the migration of your data. One of the first introduced was the 
+AWS Database Migration Service
+, which helps to migrate databases to AWS quickly and securely. The service also keeps the source database operational during the migration, helping to minimize downtime and impact to resources dependent on the databases.
+
+From there, you learned about four services that help to manage and move data between AWS and your on-premises environments. The first service that you learned about is 
+AWS DataSync
+, which is a secure service that automates moving data between locations. DataSync can copy data between various storage systems and types, and AWS.
+
+The second service that you learned about is 
+AWS Storage Gateway
+, a hybrid cloud storage service that gives on-premises access to virtually unlimited cloud storage. Storage Gateway provides a standard set of storage protocols, the use of AWS storage without needing to rewrite your existing applications, and a suite of gateway types for you to use (depending on your needs).
+
+Another service in this realm is 
+AWS Direct Connect
+. Direct Connect links your internal network to an AWS Direct Connect location over a standard Ethernet fiber-optic cable, which connects your router to a Direct Connect router. By using Direct Connect, you can interface directly with public AWS services or to Amazon Virtual Private Cloud (Amazon VPC)—and thus bypass internet service providers in your network path.
+
+The fourth service suite is the 
+AWS Snow Family
+, which includes AWS Snowcone, AWS Snowball, and AWS Snowmobile. All AWS Snow Family services are helpful if you need to quickly move large amounts of data to AWS, and they also provide options for preprocessing the data before it’s migrated. The Snowcone and Snowball devices were shown directly in the videos, and 
+Snowmobile is also an option
+ if you need to move petabytes of data as quickly as possible.
+
+To close out our migration course, we wanted to make sure that you learned about another tool that can help you as you continue to develop your AWS skills. 
+AWS Skill Builder
+ is a great location where you can find hundreds of hours of no-charge content, and links to various training and certification resources.
+
+
+
