@@ -19,6 +19,33 @@ The second approach is the
 three-phase migration process
 : assess, mobilize, and migrate and modernize. This three-phase migration process was designed by AWS to help you approach your migration.
 
+The seven Rs (relocate, rehosting, re-platforming, repurchasing, refactoring, retaining, retiring) are useful in migration planning as they provide a framework for deciding what will happen to your resources during the migration process. Here's how each of the Rs can help:
+
+Relocate: This involves moving your resources from one location to another, such as moving from on-premises to the cloud.
+Rehosting: Also known as "lift and shift," rehosting involves moving your resources to the cloud without making any significant changes to the application architecture.
+Re-platforming: This involves making some modifications to your application architecture to take advantage of cloud-native features and services.
+Repurchasing: In some cases, it may be more cost-effective or efficient to replace certain applications or services with cloud-based alternatives.
+Refactoring: This involves making significant changes to your application architecture to optimize it for the cloud environment.
+Retaining: Some resources may not be suitable for migration to the cloud and can be retained in their current location.
+Retiring: This involves decommissioning or retiring resources that are no longer needed.
+By considering each of these Rs, you can make informed decisions about how to migrate your resources and choose the most appropriate migration strategy for each application or service.
+
+#When deciding whether to retain or retire a resource during migration planning, several factors should be considered. These factors can help determine the suitability and necessity of migrating a resource to the cloud. Here are some key considerations:
+
+Business Value: Evaluate the business value and importance of the resource. Determine if it is still actively used and provides value to the organization. If a resource is no longer relevant or has become obsolete, retiring it may be the best option.
+
+Cost: Assess the cost implications of migrating and maintaining the resource in the cloud. Consider factors such as licensing fees, infrastructure costs, and ongoing operational expenses. If the cost of migrating and maintaining the resource outweighs its value, retiring it may be more cost-effective.
+
+Technical Compatibility: Evaluate the technical compatibility of the resource with the cloud environment. Some resources may have dependencies or technical limitations that make migration challenging or impractical. If a resource cannot be effectively migrated to the cloud without significant modifications, retaining it in its current location may be the better choice.
+
+Data Sensitivity and Compliance: Consider the sensitivity of the data associated with the resource and any compliance requirements that need to be met. If the resource contains highly sensitive data or is subject to strict compliance regulations, it may be more appropriate to retain it in a controlled on-premises environment.
+
+Integration and Dependencies: Assess the resource's integration with other systems and dependencies on specific infrastructure or technologies. If the resource has complex dependencies that are difficult to replicate in the cloud or if it tightly integrates with on-premises systems, retaining it may be the preferred option.
+
+Performance and Scalability: Evaluate the performance and scalability requirements of the resource. Determine if migrating it to the cloud can provide performance improvements or scalability benefits. If the resource can benefit significantly from cloud capabilities, it may be worth considering migration instead of retaining it.
+
+By considering these factors, you can make informed decisions about whether to retain or retire a resource during migration planning, ensuring that the chosen approach aligns with the organization's goals, technical requirements, and cost considerations.
+
 Closing this section, you learned about the 
 # AWS Prescriptive Guidance
  page. On this page, you can find strategies, guides, and patterns to help accelerate your cloud migration. These resources were developed by AWS technology experts and the global community of AWS Partners.
