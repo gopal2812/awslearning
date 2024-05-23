@@ -297,3 +297,23 @@ Handle the Records: When processing the stream, your application can access the 
 Fault Tolerance: DynamoDB Streams ensures fault tolerance by automatically retrying failed records and maintaining the order of records within a shard.
 
 By leveraging DynamoDB Streams, you can build real-time applications, perform data replication, maintain audit trails, and implement other use cases that require capturing and processing item-level changes in a DynamoDB table.
+
+# Can you explain the difference between a local index and a global index in DynamoDB?
+ertainly! In DynamoDB, there are two types of indexes: local indexes and global indexes. Here's an explanation of the difference between the two:
+
+#Local Index:
+
+A local index is an index that has the same partition key as the base table but a different sort key.
+It is created at the time of table creation and cannot be added or modified later.
+Local indexes are useful when you want to query the base table using different sort keys.
+They provide an efficient way to access a subset of items in the table based on the partition key and a different sort key.
+Local indexes have the same provisioned throughput as the base table.
+Global Index:
+
+A global index is an index that can have a different partition key and sort key than the base table.
+It can be created at the time of table creation or added later.
+Global indexes are useful when you want to query the table based on attributes other than the primary key.
+They provide an efficient way to access items in the table based on different attributes.
+Global indexes have their own provisioned throughput, which can be different from the base table.
+They can be created in different AWS Regions, allowing for multi-region replication and improved availability.
+In summary, local indexes are used to query the base table using a different sort key, while global indexes allow querying the table based on attributes other than the primary key and can be created in different AWS Regions. Both types of indexes provide efficient ways to access data in DynamoDB based on different criteria.
