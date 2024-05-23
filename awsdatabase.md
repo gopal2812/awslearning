@@ -355,3 +355,20 @@ Independent Provisioned Throughput: Global indexes have their own provisioned th
 
 Overall, using a global index in DynamoDB for querying based on attributes other than the primary key offers increased flexibility, improved performance, simplified data access, and the ability to replicate data across multiple regions. It enhances the querying capabilities of your application and allows for efficient retrieval of items based on non-primary key attributes.
 
+# How does the provisioned throughput differ for local indexes and global indexes?
+The provisioned throughput differs for local indexes and global indexes in DynamoDB. Here's how they differ:
+
+Local Indexes:
+
+Local indexes share the same provisioned throughput as the base table. This means that the read and write capacity units allocated to the base table are also used by the local index.
+The read and write capacity units allocated to the base table are shared between the base table and all its local indexes. DynamoDB automatically manages the distribution of provisioned throughput between the base table and its local indexes based on the workload.
+When you provision read and write capacity units for the base table, you need to consider the capacity requirements for both the base table and its local indexes.
+Global Indexes:
+
+Global indexes have their own provisioned throughput, which can be different from the base table.
+You can specify separate read and write capacity units for the global index when creating or modifying it.
+The provisioned throughput for a global index is independent of the provisioned throughput of the base table. This allows you to allocate capacity specifically for the queries performed on the global index without impacting the provisioned throughput of the base table.
+The read and write capacity units allocated to the global index are separate from the capacity units allocated to the base table. DynamoDB manages the distribution of provisioned throughput between the base table and its global indexes independently.
+In summary, local indexes share the provisioned throughput with the base table, while global indexes have their own provisioned throughput that can be allocated separately. The provisioned throughput for local indexes is managed automatically by DynamoDB, while for global indexes, you have control over the allocation of read and write capacity units.
+
+
