@@ -317,3 +317,41 @@ They provide an efficient way to access items in the table based on different at
 Global indexes have their own provisioned throughput, which can be different from the base table.
 They can be created in different AWS Regions, allowing for multi-region replication and improved availability.
 In summary, local indexes are used to query the base table using a different sort key, while global indexes allow querying the table based on attributes other than the primary key and can be created in different AWS Regions. Both types of indexes provide efficient ways to access data in DynamoDB based on different criteria.
+
+
+# When choosing between local indexes and global indexes in DynamoDB, there are several considerations to keep in mind. Here are some factors to consider:
+
+Query Patterns: Consider the specific query patterns and access patterns of your application. Determine whether you need to query the table using a different sort key (local index) or access items based on attributes other than the primary key (global index).
+
+Data Model: Evaluate your data model and understand the relationships between different attributes. Determine if a local index or a global index aligns better with your data model and the way you want to access and query the data.
+
+Provisioned Throughput: Consider the provisioned throughput requirements for your application. Local indexes share the same provisioned throughput as the base table, while global indexes have their own provisioned throughput. Evaluate the read and write capacity units needed for each index type.
+
+Scalability: Consider the scalability requirements of your application. Global indexes provide more scalability options as they can be created in different AWS Regions, allowing for multi-region replication and improved availability. Local indexes are limited to the same AWS Region as the base table.
+
+Data Consistency: Evaluate the consistency requirements of your application. Local indexes provide strong consistency, meaning that the index is updated immediately after a write operation. Global indexes, by default, provide eventual consistency, where there might be a slight delay in updating the index after a write operation.
+
+Table Size and Cost: Consider the impact on table size and cost. Local indexes increase the storage requirements of the table as they store additional index data. Global indexes also increase storage requirements and have their own provisioned throughput, which can affect the cost of your DynamoDB usage.
+
+Index Creation and Modification: Determine whether you need the flexibility to create or modify indexes after the table is created. Local indexes can only be created at the time of table creation and cannot be modified later. Global indexes can be created or modified at any time.
+
+By considering these factors, you can make an informed decision on whether to choose local indexes or global indexes in DynamoDB based on the specific requirements and characteristics of your application.
+
+
+# What are the advantages of using a global index in DynamoDB for querying based on attributes other than the primary key?
+Using a global index in DynamoDB for querying based on attributes other than the primary key offers several advantages:
+
+Flexibility in Querying: A global index allows you to query the table based on attributes other than the primary key. This provides flexibility in accessing and retrieving items that match specific attribute values, even if they are not part of the primary key. You can perform efficient queries on different attributes, enabling a wider range of query patterns.
+
+Improved Performance: With a global index, you can achieve faster query performance for specific attribute-based queries. The index provides an optimized data structure that allows for efficient retrieval of items based on the indexed attributes. This can result in reduced latency and improved response times for queries.
+
+Reduced Data Scanning: By using a global index, you can avoid the need for full table scans when querying based on non-primary key attributes. Instead of scanning the entire table, the index allows you to directly access the relevant items based on the indexed attributes, resulting in more targeted and efficient queries.
+
+Simplified Data Access: A global index simplifies the process of accessing and retrieving items based on non-primary key attributes. It eliminates the need for complex filtering or scanning operations to find specific items in the table. This can make your application code simpler and more straightforward.
+
+Multi-Region Replication: Global indexes can be created in different AWS Regions, enabling multi-region replication of data. This provides improved availability and durability for your application. You can query the global index in the desired region, reducing the latency for accessing data from different geographic locations.
+
+Independent Provisioned Throughput: Global indexes have their own provisioned throughput, allowing you to allocate separate read and write capacity units for the index. This means you can optimize the throughput specifically for the queries performed on the global index, without impacting the provisioned throughput of the base table.
+
+Overall, using a global index in DynamoDB for querying based on attributes other than the primary key offers increased flexibility, improved performance, simplified data access, and the ability to replicate data across multiple regions. It enhances the querying capabilities of your application and allows for efficient retrieval of items based on non-primary key attributes.
+
