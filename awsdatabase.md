@@ -281,3 +281,19 @@ This shift removes the idea of a one-size-fits-all database and replaces it with
 
 ![image](https://github.com/gopal2812/awslearning/assets/39087216/5bb85031-6a1b-482b-aa22-f43ef5e8a45c)
 
+# How does DynamoDB Streams capture and process item-level changes in a table?
+DynamoDB Streams captures item-level changes in a table and processes them in the following way:
+
+Enable DynamoDB Streams: First, you need to enable DynamoDB Streams for the table you want to capture changes for. This can be done through the AWS Management Console or by using the AWS SDKs or CLI.
+
+Capture Changes: Once DynamoDB Streams is enabled, it captures changes made to items in the table. These changes include both new and updated items, as well as deleted items.
+
+Stream Records: DynamoDB Streams organizes the captured changes into ordered streams of records. Each record represents a single data modification event in the table.
+
+Process the Stream: You can configure an application or service to process the stream of records from DynamoDB Streams. This can be done using AWS Lambda, which allows you to write code that automatically triggers in response to changes in the stream.
+
+Handle the Records: When processing the stream, your application can access the records and perform various actions based on the changes. For example, you can update other systems or databases, trigger notifications, or perform analytics on the data.
+
+Fault Tolerance: DynamoDB Streams ensures fault tolerance by automatically retrying failed records and maintaining the order of records within a shard.
+
+By leveraging DynamoDB Streams, you can build real-time applications, perform data replication, maintain audit trails, and implement other use cases that require capturing and processing item-level changes in a DynamoDB table.
