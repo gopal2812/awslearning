@@ -326,3 +326,6 @@ By assuming an IAM role, entities can obtain temporary credentials that provide 
 It's important to note that the process of assuming an IAM role can be performed programmatically using AWS SDKs or through the AWS Management Console. The specific implementation details may vary depending on the programming language or the AWS service being used.
 
 I hope this explanation helps! Let me know if you have any further questions.
+
+![image](https://github.com/user-attachments/assets/1a4e48df-0758-4d96-926a-3367e426f50a)
+
